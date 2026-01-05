@@ -1,15 +1,14 @@
 import Link from "next/link";
 import NavItems from "./NavItems";
 import UserDropdown from "./UserDropdown";
+import Logo from "./Logo";
 
 const Header = async ({ user }: { user: User }) => {
   return (
     <header className="sticky top-0 header">
       <div className="container header-wrapper">
         <Link href="/">
-          <span className="text-xl font-bold bg-linear-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-            Signalist
-          </span>
+          <Logo />
         </Link>
         <nav className="hidden sm:block">
           <NavItems />
